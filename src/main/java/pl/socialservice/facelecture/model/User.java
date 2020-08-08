@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 import lombok.NonNull;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -18,4 +19,8 @@ public class User {
     private String username;
     private String email;
     private String passwordHash;
+
+    @OneToMany
+    @JoinColumn(name = "id_user", insertable = false, updatable = false)
+    private List<Post> posts;
 }
