@@ -16,7 +16,6 @@ This service was created in order to learn new technology and gaining new experi
 
 ## Technologies
 - Java - version 11
-- JRE - version 8 Update 261
 - Spring Boot
 - Spring Data
 - Hibernate
